@@ -3,3 +3,6 @@
 [datalad "containers.nilearn2"]
 	image = .datalad/environments/nilearn2/image
 	cmdexec = {python} -m datalad_container.adapters.docker run {img} {cmd}
+[datalad "containers.nilearn"]
+	image = .datalad/environments/nilearn/image
+	cmdexec = singularity exec {img} {cmd}
