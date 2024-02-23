@@ -1,2 +1,5 @@
 [datalad "dataset"]
 	id = 963b7ffd-e121-4175-87c3-5a2ec088e04e
+[datalad "containers.nilearn2"]
+	image = .datalad/environments/nilearn2/image
+	cmdexec = {python} -m datalad_container.adapters.docker run {img} {cmd}
